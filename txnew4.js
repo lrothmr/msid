@@ -48,8 +48,8 @@ const notifyInterval = 4; //视频红包间隔通知开为1，常关为0
 const logs = 0; // 日志开关
 const cookieName = '腾讯新闻'
 const sy = init()
-const signurlVal = sy.getdata('sy_signurl_txnew3')
-const cookieVal = sy.getdata( 'sy_cookie_txnew3')
+const signurlVal = sy.getdata('sy_signurl_txnew4')
+const cookieVal = sy.getdata( 'sy_cookie_txnew4')
 
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
@@ -64,8 +64,8 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/user\/event\
   const cookieVal = $request.headers['Cookie'];
   sy.log(`signurlVal:${signurlVal}`)
   sy.log(`cookieVal:${cookieVal}`)
-  if (signurlVal) sy.setdata(signurlVal, 'sy_signurl_txnew3')
-  if (cookieVal) sy.setdata(cookieVal,  'sy_cookie_txnew3')
+  if (signurlVal) sy.setdata(signurlVal, 'sy_signurl_txnew4')
+  if (cookieVal) sy.setdata(cookieVal,  'sy_cookie_txnew4')
   sy.msg(cookieName, `获取Cookie: 成功🎉`, ``)
   }
  }
